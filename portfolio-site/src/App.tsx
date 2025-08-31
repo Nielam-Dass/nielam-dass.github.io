@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./HomePage";
-import ProjectsPage from "./ProjectsPage";
-import SkillsPage from "./SkillsPage";
-import ContactPage from "./ContactPage";
-import NavigationBar from "./NavigationBar";
+import HomePage from "./pages/home/HomePage";
+import ProjectsPage from "./pages/projects/ProjectsPage";
+import SkillsPage from "./pages/skills/SkillsPage";
+import ContactPage from "./pages/contact/ContactPage";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
     <>
     <NavigationBar/>
-    
+
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/projects" element={<ProjectsPage/>}/>
