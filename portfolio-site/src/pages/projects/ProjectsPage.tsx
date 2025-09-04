@@ -1,6 +1,6 @@
 function ProjectsPage() {
     return (
-        <h1>Projects Page</h1>
+        <h1 className="text-2xl font-bold">Projects Page</h1>
     );
 }
 

@@ -5,6 +5,9 @@ import SkillsPage from "./pages/skills/SkillsPage";
 import ContactPage from "./pages/contact/ContactPage";
 import NavigationBar from "./components/NavigationBar";
 
+import "./styles.css";
+
+
 function App() {
   return (
     <>
