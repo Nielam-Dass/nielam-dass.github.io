@@ -1,4 +1,7 @@
-function ProjectsPage() {
+import type { JSX } from "react";
+
+
+function ProjectsPage(): JSX.Element {
     return (
         <h1 className="text-2xl font-bold">Projects Page</h1>
     );

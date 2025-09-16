@@ -6,9 +6,10 @@ import ContactPage from "./pages/contact/ContactPage";
 import NavigationBar from "./components/NavigationBar";
 
 import "./styles.css";
+import type { JSX } from "react";
 
 
-function App() {
+function App(): JSX.Element {
   return (
     <>
     <NavigationBar/>

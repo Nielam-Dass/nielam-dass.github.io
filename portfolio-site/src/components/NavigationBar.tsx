@@ -1,7 +1,8 @@
+import type { JSX } from "react";
 import NavigationButton from "./NavigationButton";
 
 
-function NavigationBar() {
+function NavigationBar(): JSX.Element {
     return (
         <>
         <nav className="bg-black text-white flex justify-between p-3">

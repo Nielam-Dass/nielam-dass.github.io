@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -6,7 +7,7 @@ interface NavigationButtonProps {
     children: string;
 }
 
-function NavigationButton({linkTo, children}: NavigationButtonProps) {
+function NavigationButton({linkTo, children}: NavigationButtonProps): JSX.Element {
     return (
         <Link to={linkTo}>{children}</Link>
     )
