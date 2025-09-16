@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import NavigationButton from "./NavigationButton";
 
 
 function NavigationBar() {
@@ -7,10 +7,10 @@ function NavigationBar() {
         <nav className="bg-black text-white flex justify-between p-3">
             <div className="font-bold">NIELAM DASS</div>
             <div className="flex gap-4">
-                <Link to={"/"}>Home</Link>
-                <Link to={"/projects"}>Projects</Link>
-                <Link to={"/skills"}>Skills</Link>
-                <Link to={"/contact"}>Contact</Link>
+                <NavigationButton linkTo="/">Home</NavigationButton>
+                <NavigationButton linkTo="/projects">Projects</NavigationButton>
+                <NavigationButton linkTo="/skills">Skills</NavigationButton>
+                <NavigationButton linkTo="/contact">Contact</NavigationButton>
             </div>
         </nav>
         </>
