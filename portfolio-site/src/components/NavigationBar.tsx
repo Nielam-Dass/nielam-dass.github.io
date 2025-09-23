@@ -5,13 +5,13 @@ import NavigationButton from "./NavigationButton";
 function NavigationBar(): JSX.Element {
     return (
         <>
-        <nav className="bg-black text-white flex justify-between p-3">
-            <div className="font-bold">NIELAM DASS</div>
-            <div className="flex gap-4">
-                <NavigationButton linkTo="/">Home</NavigationButton>
-                <NavigationButton linkTo="/projects">Projects</NavigationButton>
-                <NavigationButton linkTo="/skills">Skills</NavigationButton>
-                <NavigationButton linkTo="/contact">Contact</NavigationButton>
+        <nav className="bg-[#272727] text-white flex justify-between h-[128px]">
+            <div className="flex items-center text-[40px] font-bold p-[40px]">NIELAM DASS</div>
+            <div className="flex">
+                <NavigationButton linkTo="/">HOME</NavigationButton>
+                <NavigationButton linkTo="/projects">PROJECTS</NavigationButton>
+                <NavigationButton linkTo="/skills">SKILLS</NavigationButton>
+                <NavigationButton linkTo="/contact">CONTACT</NavigationButton>
             </div>
         </nav>
         </>

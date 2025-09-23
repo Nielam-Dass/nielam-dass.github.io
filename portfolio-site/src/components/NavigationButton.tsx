@@ -9,8 +9,8 @@ interface NavigationButtonProps {
 
 function NavigationButton({linkTo, children}: NavigationButtonProps): JSX.Element {
     return (
-        <Link to={linkTo}>{children}</Link>
-    )
+        <Link to={linkTo} className="flex items-center px-[30px] text-[36px] font-light">{children}</Link>
+    );
 }
 
 export default NavigationButton;
