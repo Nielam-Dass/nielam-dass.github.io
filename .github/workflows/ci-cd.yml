@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./portfolio-site
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -14,8 +17,6 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Change directory
-        run: cd portfolio-site
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -23,7 +24,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./dist"
+          path: "./portfolio-site/dist"
 
   
   deploy:
