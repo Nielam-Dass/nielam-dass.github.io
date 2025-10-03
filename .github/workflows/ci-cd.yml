@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_UNDER_CONSTRUCTION_FLAG: ${{ vars.VITE_UNDER_CONSTRUCTION_FLAG }}
     defaults:
       run:
         working-directory: ./portfolio-site
@@ -25,7 +27,6 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: "./portfolio-site/dist"
-
   
   deploy:
     needs: build

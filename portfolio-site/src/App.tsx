@@ -12,10 +12,12 @@ import type { JSX } from "react";
 function App(): JSX.Element {
   return (
     <>
-    {/* TODO: Warning message should only be displayed in the production build according to env flag variables */}
-    <div className="text-[1.8rem] bg-red-300 text-red-800 border-2 border-red-800 p-[10px]">
-      Site is under construction! Some features may not work as intended.
-    </div>
+    {
+      import.meta.env.VITE_UNDER_CONSTRUCTION_FLAG=="true" &&
+      <div className="text-[1.8rem] bg-red-300 text-red-800 border-2 border-red-800 p-[10px]">
+        Site is under construction! Some features may not work as intended.
+      </div>
+    }
     <NavigationBar/>
 
     <Routes>
