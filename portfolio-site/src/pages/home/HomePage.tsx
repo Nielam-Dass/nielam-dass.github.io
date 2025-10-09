@@ -7,7 +7,7 @@ function HomePage(): JSX.Element {
         <>
         <div id="about-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
             <div>
-                <h2 className="text-[36px] font-bold">About me</h2>
+                <h2 className="text-[36px] font-bold">About Me</h2>
                 <p className="text-[24px]">
                     Hey! My name is Niel, and I'm a software developer based in the United States.
                     My primary programming languages are Python, Java, and TypeScript.
