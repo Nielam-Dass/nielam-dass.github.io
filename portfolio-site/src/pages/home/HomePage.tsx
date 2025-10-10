@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import selfieImage from "../../assets/selfie_image.png";
+import WorkHistoryItem from "./WorkHistoryItem";
 
 
 function HomePage(): JSX.Element {
@@ -17,6 +18,35 @@ function HomePage(): JSX.Element {
                 </p>
             </div>
             <img src={selfieImage} alt="Selfie" className="w-[224px] h-[224px] min-w-[224px] rounded-full"/>
+        </div>
+        <div id="work-experience-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
+            <img src="x" alt="Prior company logo" className="w-[224px] h-[224px] min-w-[224px] border-2"/>
+            <div>
+                <h2 className="text-[36px] font-bold">Work Experience</h2>
+                <ul className="list-disc pl-5 text-[20px]">
+                    <WorkHistoryItem
+                      jobTitle="Job 1"
+                      jobCompany="Company 1"
+                      startDate={new Date("01/01/2000")}
+                      endDate={new Date("02/01/2000")}
+                      jobDetails={[
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", 
+                        "Officiis aut laborum fugiat dicta saepe, sint eos incidunt nam debitis, veritatis quidem officia facilis eveniet earum provident?"
+                      ]}
+                    />
+                    <br />
+                    <WorkHistoryItem
+                      jobTitle="Job 2"
+                      jobCompany="Company 2"
+                      startDate={new Date("02/01/2000")}
+                      endDate={new Date("04/01/2001")}
+                      jobDetails={[
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", 
+                        "Officiis aut laborum fugiat dicta saepe, sint eos incidunt nam debitis, veritatis quidem officia facilis eveniet earum provident?"
+                      ]}
+                    />
+                </ul>
+            </div>
         </div>
         </>
     );
