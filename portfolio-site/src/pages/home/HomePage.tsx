@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import selfieImage from "../../assets/selfie_image.png";
 import WorkHistoryItem from "./WorkHistoryItem";
+import bdLogo from "../../assets/becton_dickinson_logo.png";
 
 
 function HomePage(): JSX.Element {
@@ -20,29 +21,32 @@ function HomePage(): JSX.Element {
             <img src={selfieImage} alt="Selfie" className="w-[224px] h-[224px] min-w-[224px] rounded-full"/>
         </div>
         <div id="work-experience-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
-            <img src="x" alt="Prior company logo" className="w-[224px] h-[224px] min-w-[224px] border-2"/>
+            <img src={bdLogo} alt="Prior company logo" className="w-[224px] h-[224px] min-w-[224px]"/>
             <div>
                 <h2 className="text-[36px] font-bold">Work Experience</h2>
                 <ul className="list-disc pl-5 text-[20px]">
                     <WorkHistoryItem
-                      jobTitle="Job 1"
-                      jobCompany="Company 1"
-                      startDate={new Date("01/01/2000")}
-                      endDate={new Date("02/01/2000")}
+                      jobTitle="Algorithms Tutor"
+                      jobCompany="Rensselaer Polytechnic Institute"
+                      startDate={new Date("10/16/2023")}
+                      endDate={new Date("12/10/2023")}
                       jobDetails={[
-                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", 
-                        "Officiis aut laborum fugiat dicta saepe, sint eos incidunt nam debitis, veritatis quidem officia facilis eveniet earum provident?"
+                        "Tutored two students taking the Introduction to Algorithms course at my university", 
+                        "Enabled tutees to understand how to design optimal algorithm solutions for different types of problems",
+                        "Scheduled tutoring sessions with individuals based on availability"
                       ]}
                     />
                     <br />
                     <WorkHistoryItem
-                      jobTitle="Job 2"
-                      jobCompany="Company 2"
-                      startDate={new Date("02/01/2000")}
-                      endDate={new Date("04/01/2001")}
+                      jobTitle="Python Developer Intern"
+                      jobCompany="Becton Dickinson"
+                      startDate={new Date("09/01/2019")}
+                      endDate={new Date("06/10/2020")}
                       jobDetails={[
-                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit.", 
-                        "Officiis aut laborum fugiat dicta saepe, sint eos incidunt nam debitis, veritatis quidem officia facilis eveniet earum provident?"
+                        "Supported material research by developing a Python program utilizing OpenCV to visually analyze biaxial stress test videos and collect deformation data in a CSV file", 
+                        "Refactored codebase using object-oriented modularization to improve maintainability and readability",
+                        "Implemented a more precise computer vision algorithm to calculate the radius of curvature for a contour",
+                        "Collaborated with research mentor and project manager by sharing updates and discussing new features"
                       ]}
                     />
                 </ul>
