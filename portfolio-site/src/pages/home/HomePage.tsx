@@ -18,7 +18,7 @@ function HomePage(): JSX.Element {
                     I'm currently looking to kickstart my tech career, so if you have an opportunity for me, feel free to reach out!
                 </p>
             </div>
-            <img src={selfieImage} alt="Selfie" className="w-[224px] h-[224px] min-w-[224px] rounded-full"/>
+            <img src={selfieImage} alt="Selfie" className="w-[224px] h-[224px] min-w-[224px] rounded-full drop-shadow-2xl/40"/>
         </div>
         <div id="work-experience-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
             <img src={bdLogo} alt="Prior company logo" className="w-[224px] h-[224px] min-w-[224px]"/>
