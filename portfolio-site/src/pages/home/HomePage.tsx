@@ -1,6 +1,7 @@
 import type { JSX } from "react";
-import selfieImage from "../../assets/selfie_image.png";
 import WorkHistoryItem from "./WorkHistoryItem";
+import EducationItem from "./EducationItem";
+import selfieImage from "../../assets/selfie_image.png";
 import bdLogo from "../../assets/becton_dickinson_logo.png";
 
 
@@ -50,6 +51,13 @@ function HomePage(): JSX.Element {
                       ]}
                     />
                 </ul>
+            </div>
+        </div>
+        <div id="education-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
+            <img src="x" alt="Prior school logo" className="h-[224px] w-[224px] min-w-[224px] border-2"/>
+            <div>
+                <h2 className="font-bold text-[36px]">Education</h2>
+                <EducationItem schoolName="School Name" startDate={new Date("01/01/2000")} endDate={new Date("06/01/2002")} studyDetails={["Degree", "Minors", "Coursework", "GPA"]}/>
             </div>
         </div>
         </>
