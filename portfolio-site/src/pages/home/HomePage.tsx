@@ -3,6 +3,7 @@ import WorkHistoryItem from "./WorkHistoryItem";
 import EducationItem from "./EducationItem";
 import selfieImage from "../../assets/selfie_image.png";
 import bdLogo from "../../assets/becton_dickinson_logo.png";
+import rpiLogo from "../../assets/rpi_logo_colored.svg";
 
 
 function HomePage(): JSX.Element {
@@ -54,10 +55,20 @@ function HomePage(): JSX.Element {
             </div>
         </div>
         <div id="education-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
-            <img src="x" alt="Prior school logo" className="h-[224px] w-[224px] min-w-[224px] border-2"/>
+            <img src={rpiLogo} alt="Prior school logo" className="h-[224px] w-[224px] min-w-[224px] p-[4px]"/>
             <div>
                 <h2 className="font-bold text-[36px]">Education</h2>
-                <EducationItem schoolName="School Name" startDate={new Date("01/01/2000")} endDate={new Date("06/01/2002")} studyDetails={["Degree", "Minors", "Coursework", "GPA"]}/>
+                <EducationItem 
+                  schoolName="Rensselaer Polytechnic Insititute" 
+                  startDate={new Date("08/28/2020")} 
+                  endDate={new Date("05/17/2024")} 
+                  studyDetails={[
+                    "Degree: Bachelor of Science in Biomedical Engineering; Data Science specialization", 
+                    "Minors: Computer Science and Economics", 
+                    "Coursework: Principles of Software, Database Systems, Embedded Systems, Cryptography & Network Security, Data Structures", 
+                    "GPA: 3.8/4.0"
+                  ]}
+                />
             </div>
         </div>
         </>
