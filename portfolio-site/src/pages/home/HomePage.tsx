@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import WorkHistoryItem from "./WorkHistoryItem";
 import EducationItem from "./EducationItem";
-import selfieImage from "../../assets/selfie_image.png";
+import selfieImage from "../../assets/selfie_image.jpg";
 import bdLogo from "../../assets/becton_dickinson_logo.png";
 import rpiLogo from "../../assets/rpi_logo_colored.svg";
 
