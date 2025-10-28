@@ -1,0 +1,25 @@
+[
+    {
+        "jobTitle": "Algorithms Tutor",
+        "jobCompany": "Rensselaer Polytechnic Institute",
+        "startDate": "10/16/2023",
+        "endDate": "12/10/2023",
+        "jobDetails": [
+            "Tutored two students taking the Introduction to Algorithms course at my university", 
+            "Enabled tutees to understand how to design optimal algorithm solutions for different types of problems",
+            "Scheduled tutoring sessions with individuals based on availability"
+        ]
+    },
+    {
+        "jobTitle": "Python Developer Intern",
+        "jobCompany": "Becton Dickinson",
+        "startDate": "09/01/2019",
+        "endDate": "06/10/2020",
+        "jobDetails": [
+            "Supported material research by developing a Python program utilizing OpenCV to visually analyze biaxial stress test videos and collect deformation data in a CSV file", 
+            "Refactored codebase using object-oriented modularization to improve maintainability and readability",
+            "Implemented a more precise computer vision algorithm to calculate the radius of curvature for a contour",
+            "Collaborated with research mentor and project manager by sharing updates and discussing new features"
+        ]
+    }
+]

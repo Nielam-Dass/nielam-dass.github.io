@@ -1,0 +1,13 @@
+[
+    {
+        "schoolName": "Rensselaer Polytechnic Insititute",
+        "startDate": "08/28/2020",
+        "endDate": "05/17/2024",
+        "studyDetails": [
+            "Degree: Bachelor of Science in Biomedical Engineering; Data Science specialization", 
+            "Minors: Computer Science and Economics", 
+            "Coursework: Principles of Software, Database Systems, Embedded Systems, Cryptography & Network Security, Data Structures", 
+            "GPA: 3.8/4.0"
+        ]
+    }
+]
