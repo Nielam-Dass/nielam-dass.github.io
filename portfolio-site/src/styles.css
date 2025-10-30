@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+
 body {
     font-family: "Inter";
+}
+
+#root {
+    /* Turn root element into a vertical flex container to allow child elements to use flex item properties if needed */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
