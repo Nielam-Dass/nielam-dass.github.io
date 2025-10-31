@@ -1,0 +1,14 @@
+[
+    {
+        "contactMethod": "LinkedIn",
+        "contactLink": "https://www.linkedin.com/in/nielam-dass/",
+        "extraMessage": "Let's connect",
+        "contactIconSrc": "x"
+    },
+    {
+        "contactMethod": "GitHub",
+        "contactLink": "https://github.com/Nielam-Dass",
+        "extraMessage": "Check out my repositories, make pull requests, and raise issues",
+        "contactIconSrc": "x"
+    }
+]
