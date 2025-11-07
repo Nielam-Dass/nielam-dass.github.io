@@ -45,7 +45,7 @@ function HomePage(): JSX.Element {
                 </ul>
             </div>
         </div>
-        <div id="education-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">
+        <div id="education-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px] mb-[20px]">
             <img src={rpiLogo} alt="Prior school logo" className="h-[224px] w-[224px] min-w-[224px] p-[4px]"/>
             <div>
                 <h2 className="font-bold text-[36px]">Education</h2>

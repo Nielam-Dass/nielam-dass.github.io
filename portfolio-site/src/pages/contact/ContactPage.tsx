@@ -4,7 +4,7 @@ import ContactInfoList from "./ContactInfoList";
 
 function ContactPage(): JSX.Element {
     return (
-        <div className="flex flex-col grow-1 justify-center gap-[80px] px-[140px]">
+        <div className="flex flex-col grow-1 justify-center gap-[80px] px-[140px] pb-[20px]">
             <h1 className="text-[48px] font-bold">CONTACT INFO</h1>
             <ContactInfoList/>
         </div>
