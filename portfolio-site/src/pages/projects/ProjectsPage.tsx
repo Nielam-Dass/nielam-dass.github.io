@@ -1,9 +1,10 @@
 import type { JSX } from "react";
+import ProjectSearchBar from "./ProjectSearchBar";
 
 
 function ProjectsPage(): JSX.Element {
     return (
-        <h1 className="text-2xl font-bold">Projects Page</h1>
+        <ProjectSearchBar/>
     );
 }
 
