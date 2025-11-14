@@ -8,7 +8,7 @@ interface ProjectSearchResultsProps {
 
 function ProjectSearchResults(props: ProjectSearchResultsProps): JSX.Element {
     return (
-        <div>
+        <div className="flex flex-col gap-[30px] px-[70px]">
             {props.projectList.map((project, index): JSX.Element => {
                 return (
                     <ProjectCard project={project} key={index}/>
