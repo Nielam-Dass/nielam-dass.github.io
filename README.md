@@ -6,3 +6,5 @@ To view the content published to the site so far, go to https://nielam-dass.gith
 [GitHub icon](https://www.iconfinder.com/icons/764894/github_media_social_square_icon) from Iconfinder created by Xinh Studio
 
 [LinkedIn icon](https://www.iconfinder.com/icons/317725/linkedin_social_icon) from Iconfinder created by Pixel Bazaar
+
+[Default project icon](https://www.freepik.com/icon/programming_6062646) from Freepik created by Juicy_fish
