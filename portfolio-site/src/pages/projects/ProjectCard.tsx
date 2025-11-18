@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import React from "react";
 
 
 export interface Project {
@@ -6,6 +7,7 @@ export interface Project {
     projectDescription: string[];
     skillsUsed: string[];
     projectImageSrc?: string;
+    projectLinks?: {linkText: string, linkDest: string}[];
 }
 
 interface ProjectCardProps {
@@ -21,6 +23,30 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
             <img src={projectImage} alt="Project Image" className="size-[160px] min-w-[160px]"/>
             <div className="text-[24px]">
                 <h2 className="text-[36px] font-bold">{props.project.projectName}</h2>
+                {((): JSX.Element => {
+                    if(props.project.projectLinks===undefined || props.project.projectLinks.length===0) {
+                        return <div className="text-gray-500">No link available this private project</div>
+                    }
+                    else {
+                        const numLinks = props.project.projectLinks.length;
+                        return (
+                        <div>
+                            🔗[
+                                <span>
+                                {props.project.projectLinks.map((projLink, index): JSX.Element => {
+                                    return (
+                                        <React.Fragment key={index}>
+                                            <a href={projLink.linkDest} target="_blank" className="font-light text-[#006e8d] underline">{projLink.linkText}</a>
+                                            {index < numLinks-1 && <span> | </span>}
+                                        </React.Fragment>
+                                    );
+                                })}
+                                </span>
+                            ]
+                        </div>
+                        )
+                    }
+                })()}
                 <ul className="list-disc pl-5">
                 {props.project.projectDescription.map((descriptionPoint, index) => {
                     return (

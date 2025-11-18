@@ -12,7 +12,11 @@ function ProjectsPage(): JSX.Element {
                 "More description of project 1",
                 "Even more description of project 1"
             ],
-            skillsUsed: ["ABC", "DEF"]
+            skillsUsed: ["ABC", "DEF"],
+            projectLinks: [
+                {linkText: "ExampleCom", linkDest: "https://example.com/"}, 
+                {linkText: "ExampleNet", linkDest: "https://example.net/"}
+            ]
         },
         {
             projectName: "Project 2",
@@ -27,7 +31,10 @@ function ProjectsPage(): JSX.Element {
             projectDescription: [
                 "Description of project 3"
             ],
-            skillsUsed: ["JKL", "ABC"]
+            skillsUsed: ["JKL", "ABC"],
+            projectLinks: [
+                {linkText: "ExampleCom", linkDest: "https://example.com/"}
+            ]
         },
         {
             projectName: "Project 4",
