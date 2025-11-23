@@ -1,5 +1,21 @@
 [
     {
+        "projectName": "Project 2",
+        "projectDescription": [
+            "Description of project 2",
+            "More description of project 2"
+        ],
+        "skillsUsed": ["GHI", "JKL", "DEF"],
+        "visibilityScore": 8
+    },
+    {
+        "projectName": "Project 4",
+        "projectDescription": [
+            "Description of project 4"
+        ],
+        "skillsUsed": ["DEF", "MNO"]
+    },
+    {
         "projectName": "Project 1",
         "projectDescription": [
             "Description of project 1",
@@ -10,15 +26,8 @@
         "projectLinks": [
             {"linkText": "ExampleCom", "linkDest": "https://example.com/"}, 
             {"linkText": "ExampleNet", "linkDest": "https://example.net/"}
-        ]
-    },
-    {
-        "projectName": "Project 2",
-        "projectDescription": [
-            "Description of project 2",
-            "More description of project 2"
         ],
-        "skillsUsed": ["GHI", "JKL", "DEF"]
+        "visibilityScore": 10
     },
     {
         "projectName": "Project 3",
@@ -28,13 +37,7 @@
         "skillsUsed": ["JKL", "ABC"],
         "projectLinks": [
             {"linkText": "ExampleCom", "linkDest": "https://example.com/"}
-        ]
-    },
-    {
-        "projectName": "Project 4",
-        "projectDescription": [
-            "Description of project 4"
         ],
-        "skillsUsed": ["DEF", "MNO"]
+        "visibilityScore": 8
     }
 ]

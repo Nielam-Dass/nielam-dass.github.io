@@ -8,6 +8,7 @@ export interface Project {
     skillsUsed: string[];
     projectImageSrc?: string;
     projectLinks?: {linkText: string, linkDest: string}[];
+    visibilityScore?: number;
 }
 
 interface ProjectCardProps {

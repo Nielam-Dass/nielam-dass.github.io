@@ -6,7 +6,9 @@ import type { Project } from "./ProjectCard";
 
 
 function ProjectsPage(): JSX.Element {
-    const [projectList, setProjectList] = useState<Project[]>(fullProjectList);
+    const [projectList, setProjectList] = useState<Project[]>(
+        fullProjectList.sort((proj1: Project, proj2: Project) => (proj2.visibilityScore || 0) - (proj1.visibilityScore || 0))
+    );
 
     const isRelevantToSearch = (content: string, search: string): boolean => content.toLowerCase().includes(search);
 
