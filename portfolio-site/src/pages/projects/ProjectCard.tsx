@@ -55,7 +55,7 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
                     );
                 })}
                 </ul>
-                <div>Skills: {props.project.skillsUsed.join(", ")}</div>
+                <div className="font-light italic">Skills: {props.project.skillsUsed.join(", ")}</div>
             </div>
         </div>
     );
