@@ -1,43 +1,73 @@
 [
     {
-        "projectName": "Project 2",
+        "projectName": "Hospital Management System",
         "projectDescription": [
-            "Description of project 2",
-            "More description of project 2"
+            "Built Spring Boot application to manage hospital data about patients, staff, visits, and medical records within a PostgreSQL database via the Hibernate JPA interface following test-driven development practices",
+            "Containerized application with Docker Tomcat image and deployed service using AWS ECS and RDS",
+            "Automated integration testing in GitHub Actions CI pipeline using MockMvc and H2 database"
         ],
-        "skillsUsed": ["GHI", "JKL", "DEF"],
-        "visibilityScore": 8
-    },
-    {
-        "projectName": "Project 4",
-        "projectDescription": [
-            "Description of project 4"
-        ],
-        "skillsUsed": ["DEF", "MNO"]
-    },
-    {
-        "projectName": "Project 1",
-        "projectDescription": [
-            "Description of project 1",
-            "More description of project 1",
-            "Even more description of project 1"
-        ],
-        "skillsUsed": ["ABC", "DEF"],
+        "skillsUsed": ["Java", "Spring Boot", "JPA", "PostgreSQL", "Docker", "TDD"],
         "projectLinks": [
-            {"linkText": "ExampleCom", "linkDest": "https://example.com/"}, 
-            {"linkText": "ExampleNet", "linkDest": "https://example.net/"}
+            {"linkText": "GitHub", "linkDest": "https://github.com/Nielam-Dass/Hospital-Management-System"}
         ],
         "visibilityScore": 10
     },
     {
-        "projectName": "Project 3",
+        "projectName": "Finance Dashboard",
         "projectDescription": [
-            "Description of project 3"
+            "Developed Spring Boot application to periodically retrieve finance data from external REST APIs",
+            "Stored the data in MySQL using JDBC and displayed it in a dashboard using ThymeLeaf templates",
+            "Deployed application to AWS using an EC2 instance and a RDS service"
         ],
-        "skillsUsed": ["JKL", "ABC"],
+        "skillsUsed": ["Java", "Spring Boot", "JDBC", "MySQL", "SLF4j", "ThymeLeaf"],
         "projectLinks": [
-            {"linkText": "ExampleCom", "linkDest": "https://example.com/"}
+            {"linkText": "GitHub", "linkDest": "https://github.com/Nielam-Dass/Finance-Dashboard"}
         ],
-        "visibilityScore": 8
+        "visibilityScore": 6
+    },
+    {
+        "projectName": "Water Potability Analysis",
+        "projectDescription": [
+            "Used Scikit-Learn tools, such as PCA, logistic regression, SVM, XGBoost, and pipelines to construct multiple ML models that predict the potability of water samples based on chemical attributes",
+            "Created data visualizations using Seaborn to assess feature importance and model accuracy"
+        ],
+        "skillsUsed": ["Python", "Scikit-learn", "Pandas", "Seaborn", "Jupyter Notebook", "Machine Learning"],
+        "projectLinks": [
+            {"linkText": "GitHub", "linkDest": "https://github.com/Nielam-Dass/Water-Potability-Analysis"}
+        ],
+        "visibilityScore": 5
+    },
+    {
+        "projectName": "Brain Tumor Detection",
+        "projectDescription": [
+            "Used the TensorFlow Keras library to train a CNN model to detect brain tumors from a CT scan",
+            "Plotted training and validation loss over 10 epochs to identify potential overfitting",
+            "Final validation accuracy was 97.5% with the F1-score being 0.976"
+        ],
+        "skillsUsed": ["Python", "TensorFlow", "Matplotlib", "Jupyter Notebook", "Deep Learning"],
+        "projectLinks": [
+            {"linkText": "GitHub", "linkDest": "https://github.com/Nielam-Dass/Brain-Tumor-Detection"}
+        ],
+        "visibilityScore": 7
+    },
+    {
+        "projectName": "EVE Cardiac Monitor",
+        "projectDescription": [
+            "Developed a cardiac monitor prototype capable of collecting ECG and vibroacoustic signals from the heart",
+            "Created a GUI application with PyQt that filtered and displayed signal data from the monitoring device",
+            "Assessed customer requirements by communicating with project sponsor and offered design proposals"
+        ],
+        "skillsUsed": ["Python", "PyQt", "SciPy", "NumPy", "Multithreading"],
+        "visibilityScore": 6
+    },
+    {
+        "projectName": "EOG Robot Control",
+        "projectDescription": [
+            "Prototyped robot control interface based on eye movements, which quadriplegic patients could use",
+            "Utilized K-Means clustering to determine EOG signal thresholds. which detect multiple types of saccades",
+            "Evaluated robustness of signal processing algorithm using a binomial statistical test"
+        ],
+        "skillsUsed": ["Python", "SciPy", "Pythonnet"],
+        "visibilityScore": 6
     }
 ]
