@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { createHashRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 import SkillsPage from "./pages/skills/SkillsPage";
@@ -9,6 +9,41 @@ import "./styles.css";
 import type { JSX } from "react";
 
 
+const hashRouter = createHashRouter([
+  {
+    path: "/",
+    element: <AppLayout/>,
+    children: [
+      {
+        path: "/",
+        element: <HomePage/>
+      },
+      {
+        path: "projects",
+        element: <ProjectsPage/>
+      },
+      {
+        path: "skills",
+        element: <SkillsPage/>
+      },
+      {
+        path: "contact",
+        element: <ContactPage/>
+      }
+    ]
+  }
+]);
+
+function AppLayout(): JSX.Element {
+  return (
+    <>
+      <ScrollRestoration/>
+      <NavigationBar/>
+      <Outlet/>
+    </>
+  );
+}
+
 function App(): JSX.Element {
   return (
     <>
@@ -18,14 +53,7 @@ function App(): JSX.Element {
         Site is under construction! Some features may not work as intended.
       </div>
     }
-    <NavigationBar/>
-
-    <Routes>
-      <Route path="/" element={<HomePage/>}/>
-      <Route path="/projects" element={<ProjectsPage/>}/>
-      <Route path="/skills" element={<SkillsPage/>}/>
-      <Route path="/contact" element={<ContactPage/>}/>
-    </Routes>
+    <RouterProvider router={hashRouter}/>
     </>
   );
 }
