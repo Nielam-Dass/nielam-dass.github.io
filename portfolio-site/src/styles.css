@@ -4,6 +4,7 @@
 body {
     font-family: "Inter";
     overflow-y: scroll;
+    min-width: 1200px;
 }
 
 #root {
