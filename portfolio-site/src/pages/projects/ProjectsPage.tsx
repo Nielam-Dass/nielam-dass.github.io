@@ -10,7 +10,7 @@ function ProjectsPage(): JSX.Element {
         fullProjectList.sort((proj1: Project, proj2: Project) => (proj2.visibilityScore || 0) - (proj1.visibilityScore || 0))
     );
 
-    const isRelevantToSearch = (content: string, search: string): boolean => content.toLowerCase().includes(search);
+    const isRelevantToSearch = (content: string, search: string): boolean => content.toLowerCase().includes(search.toLowerCase());
 
     const handleSearchUpdate: React.ChangeEventHandler<HTMLInputElement> = (event: React.ChangeEvent<HTMLInputElement>) => {
         const searchQuery: string = event.target.value;
