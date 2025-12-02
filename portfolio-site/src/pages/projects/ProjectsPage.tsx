@@ -2,7 +2,7 @@ import React, { useState, type JSX } from "react";
 import ProjectSearchBar from "./ProjectSearchBar";
 import ProjectSearchResults from "./ProjectSearchResults";
 import fullProjectList from "../../data/projectList.json";
-import type { Project } from "./ProjectCard";
+import type { Project } from "./Project";
 
 
 function ProjectsPage(): JSX.Element {

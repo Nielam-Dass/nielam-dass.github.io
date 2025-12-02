@@ -1,15 +1,7 @@
 import type { JSX } from "react";
 import React from "react";
+import type { Project } from "./Project";
 
-
-export interface Project {
-    projectName: string;
-    projectDescription: string[];
-    skillsUsed: string[];
-    projectImageSrc?: string;
-    projectLinks?: {linkText: string, linkDest: string}[];
-    visibilityScore?: number;
-}
 
 interface ProjectCardProps {
     project: Project;
