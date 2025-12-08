@@ -1,9 +1,10 @@
 import type { JSX } from "react";
+import SkillSearchBar from "./SkillSearchBar";
 
 
 function SkillsPage(): JSX.Element {
     return (
-        <h1 className="text-2xl font-bold">Skills Page</h1>
+        <SkillSearchBar/>
     );
 }
 
