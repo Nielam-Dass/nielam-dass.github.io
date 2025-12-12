@@ -1,5 +1,6 @@
 import { type JSX } from 'react'
 import type Skill from './Skill';
+import SkillCard from './SkillCard';
 
 
 interface SkillsSearchResultsProps {
@@ -8,9 +9,9 @@ interface SkillsSearchResultsProps {
 
 function SkillsSearchResults(props: SkillsSearchResultsProps): JSX.Element {
   return (
-    <ul>
-        {props.skillList.map((skill, index): JSX.Element => <li key={index}>{skill.skillName}</li>)}
-    </ul>
+    <div>
+        {props.skillList.map((skill, index): JSX.Element => <SkillCard key={index} skill={skill}/>)}
+    </div>
   );
 }
 
