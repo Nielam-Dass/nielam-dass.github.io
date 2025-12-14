@@ -9,7 +9,7 @@ interface SkillsSearchResultsProps {
 
 function SkillsSearchResults(props: SkillsSearchResultsProps): JSX.Element {
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-y-[20px] px-[40px] justify-items-center">
         {props.skillList.map((skill, index): JSX.Element => <SkillCard key={index} skill={skill}/>)}
     </div>
   );
