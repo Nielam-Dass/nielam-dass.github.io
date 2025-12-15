@@ -1,16 +1,27 @@
-import type { JSX } from "react";
+import { useState, type JSX } from "react";
 import SkillSearchBar from "./SkillSearchBar";
 import SkillsSearchResults from "./SkillsSearchResults";
-import skillList from "../../data/skillList.json";
+import fullSkillList from "../../data/skillList.json";
+import type Skill from "./Skill";
 
 
 function SkillsPage(): JSX.Element {
+    const [skillList, setSkillList] = useState<Skill[]>(
+        fullSkillList.sort((skill1: Skill, skill2: Skill) => (skill2.skillWeight || 0) - (skill1.skillWeight || 0))
+    );
+
+    const handleSearchUpdate: React.ChangeEventHandler<HTMLInputElement> = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSkillList(() => {
+            return fullSkillList.filter((skill: Skill) => {
+                return skill.skillName.toLowerCase().includes(event.target.value.toLowerCase());
+            });
+        });
+    }
+
     return (
         <div className="flex flex-col gap-[40px] px-[140px] pb-[20px]">
-            <SkillSearchBar/>
-            <SkillsSearchResults 
-                skillList={skillList}
-            />
+            <SkillSearchBar onSearchUpdate={handleSearchUpdate}/>
+            <SkillsSearchResults skillList={skillList}/>
         </div>
     );
 }
