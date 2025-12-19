@@ -1,54 +1,166 @@
 [
     {
-        "skillName": "Skill 1",
+        "skillName": "Python",
         "skillWeight": 10
-    }, 
+    },
     {
-        "skillName": "Skill 2",
-        "skillWeight": 10
-    }, 
+        "skillName": "TensorFlow",
+        "skillWeight": 9
+    },
     {
-        "skillName": "Skill 3",
-        "skillWeight": 8
-    }, 
-    {
-        "skillName": "Skill 4",
+        "skillName": "Sckit-Learn",
         "skillWeight": 7
-    }, 
+    },
     {
-        "skillName": "Skill 5"
-    }, 
+        "skillName": "PySpark",
+        "skillWeight": 9
+    },
     {
-        "skillName": "Skill 6"
-    }, 
+        "skillName": "Pandas",
+        "skillWeight": 8
+    },
     {
-        "skillName": "Skill 7"
-    }, 
+        "skillName": "Flask",
+        "skillWeight": 9
+    },
     {
-        "skillName": "Skill 8"
-    }, 
+        "skillName": "OpenCV",
+        "skillWeight": 7
+    },
     {
-        "skillName": "Skill 9"
-    }, 
+        "skillName": "PyQt",
+        "skillWeight": 6
+    },
     {
-        "skillName": "Skill 10"
-    }, 
+        "skillName": "Seaborn",
+        "skillWeight": 6
+    },
     {
-        "skillName": "Skill 11"
-    }, 
+        "skillName": "Java",
+        "skillWeight": 10
+    },
     {
-        "skillName": "Skill 12"
-    }, 
+        "skillName": "Spring Boot",
+        "skillWeight": 9
+    },
     {
-        "skillName": "Skill 13"
-    }, 
+        "skillName": "JPA",
+        "skillWeight": 8
+    },
     {
-        "skillName": "Skill 14"
-    }, 
+        "skillName": "JDBC",
+        "skillWeight": 8
+    },
     {
-        "skillName": "Skill 15"
-    }, 
+        "skillName": "JUnit",
+        "skillWeight": 8
+    },
     {
-        "skillName": "Skill 16"
+        "skillName": "Maven",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "JavaScript",
+        "skillWeight": 10
+    },
+    {
+        "skillName": "Node.js",
+        "skillWeight": 9
+    },
+    {
+        "skillName": "React",
+        "skillWeight": 9
+    },
+    {
+        "skillName": "Express.js",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "Jest",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "Passport.js",
+        "skillWeight": 7
+    },
+    {
+        "skillName": "TypeScript",
+        "skillWeight": 10
+    },
+    {
+        "skillName": "SQL",
+        "skillWeight": 10
+    },
+    {
+        "skillName": "PostgreSQL",
+        "skillWeight": 9
+    },
+    {
+        "skillName": "MySQL",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "MongoDB",
+        "skillWeight": 7
+    },
+    {
+        "skillName": "Redis",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "AWS",
+        "skillWeight": 9
+    },
+    {
+        "skillName": "Docker",
+        "skillWeight": 9
+    },
+    {
+        "skillName": "Terraform",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "Kubernetes",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "RabbitMQ",
+        "skillWeight": 6
+    },
+    {
+        "skillName": "Linux",
+        "skillWeight": 7
+    },
+    {
+        "skillName": "CI/CD",
+        "skillWeight": 8
+    },
+    {
+        "skillName": "GitHub",
+        "skillWeight": 6
+    },
+    {
+        "skillName": "Tableau",
+        "skillWeight": 5
+    },
+    {
+        "skillName": "R"
+    },
+    {
+        "skillName": "MATLAB"
+    },
+    {
+        "skillName": "C++",
+        "skillWeight": 7
+    },
+    {
+        "skillName": "C",
+        "skillWeight": 7
+    },
+    {
+        "skillName": "HTML"
+    },
+    {
+        "skillName": "CSS"
     }
 ]
