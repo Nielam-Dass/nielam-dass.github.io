@@ -69,5 +69,13 @@
         ],
         "skillsUsed": ["Python", "SciPy", "Pythonnet"],
         "visibilityScore": 6
+    },
+    {
+        "projectName": "Cryptography Bank Project",
+        "projectDescription": [
+            "Implemented a cryptographically secure TCP protocol to encrypt sensitive data exchanged between a bank server and client as a proof-of-concept",
+            "Audited a different protocol from another group and successfully uncovered security flaws using Wireshark and differential cryptanalysis techniques"
+        ],
+        "skillsUsed": ["Python", "Socket", "Wireshark"]
     }
 ]
