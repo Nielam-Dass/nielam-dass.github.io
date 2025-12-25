@@ -8,7 +8,7 @@ interface ProjectSearchResultsProps {
 }
 
 function ProjectSearchResults(props: ProjectSearchResultsProps): JSX.Element {
-    if(props.projectList.length==0) {
+    if(props.projectList.length===0) {
         return (
             <div className="flex justify-center text-[24px] font-bold">No matching projects found</div>
         );
