@@ -1,4 +1,4 @@
-import { createHashRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
+import { createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 import SkillsPage from "./pages/skills/SkillsPage";
@@ -29,6 +29,10 @@ const hashRouter = createHashRouter([
       {
         path: "contact",
         element: <ContactPage/>
+      },
+      {
+        path: "*",
+        element: <Navigate to={"/"}/>
       }
     ]
   }
