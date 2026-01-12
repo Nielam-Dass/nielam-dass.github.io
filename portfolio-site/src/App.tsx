@@ -4,9 +4,10 @@ import ProjectsPage from "./pages/projects/ProjectsPage";
 import SkillsPage from "./pages/skills/SkillsPage";
 import ContactPage from "./pages/contact/ContactPage";
 import NavigationBar from "./components/NavigationBar";
+import ReactGA4 from "react-ga4";
 
 import "./styles.css";
-import type { JSX } from "react";
+import { useEffect, type JSX } from "react";
 
 
 const hashRouter = createHashRouter([
@@ -49,6 +50,12 @@ function AppLayout(): JSX.Element {
 }
 
 function App(): JSX.Element {
+  useEffect(() => {
+    ReactGA4.set({send_page_view: false});
+    ReactGA4.initialize(import.meta.env.VITE_GA4_MEASUREMENT_ID);
+    ReactGA4.send({hitType: "pageview", page: "/", title: "Home"});
+  }, []);
+
   return (
     <>
     {
