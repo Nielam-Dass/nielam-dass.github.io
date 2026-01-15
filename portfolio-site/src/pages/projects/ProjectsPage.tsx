@@ -1,11 +1,16 @@
-import React, { useState, type JSX } from "react";
+import React, { useEffect, useState, type JSX } from "react";
 import ProjectSearchBar from "./ProjectSearchBar";
 import ProjectSearchResults from "./ProjectSearchResults";
 import fullProjectList from "../../data/projectList.json";
 import type { Project } from "./Project";
+import ReactGA4 from "react-ga4";
 
 
 function ProjectsPage(): JSX.Element {
+    useEffect(() => {
+        ReactGA4.send({hitType: "pageview", page: "/projects", title: "Projects"});
+    }, []);
+
     const [projectList, setProjectList] = useState<Project[]>(
         fullProjectList.sort((proj1: Project, proj2: Project) => (proj2.visibilityScore || 0) - (proj1.visibilityScore || 0))
     );

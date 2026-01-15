@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import type { JSX } from "react";
 import WorkHistoryItem from "./WorkHistoryItem";
 import EducationItem from "./EducationItem";
@@ -9,9 +9,14 @@ import rpiLogo from "../../assets/rpi_logo_colored.svg";
 import workHistory from "../../data/workHistory.json";
 import educationHistory from "../../data/educationHistory.json";
 import aboutContent from "../../data/aboutContent.json";
+import ReactGA4 from "react-ga4";
 
 
 function HomePage(): JSX.Element {
+    useEffect(() => {
+        ReactGA4.send({hitType: "pageview", page: "/", title: "Home"});
+    }, []);
+
     return (
         <>
         <div id="about-section" className="flex gap-[150px] px-[140px] pt-[100px] pb-[30px]">

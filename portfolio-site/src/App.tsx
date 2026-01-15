@@ -7,7 +7,7 @@ import NavigationBar from "./components/NavigationBar";
 import ReactGA4 from "react-ga4";
 
 import "./styles.css";
-import { useEffect, type JSX } from "react";
+import { type JSX } from "react";
 
 
 const hashRouter = createHashRouter([
@@ -39,6 +39,9 @@ const hashRouter = createHashRouter([
   }
 ]);
 
+ReactGA4.set({send_page_view: false});
+ReactGA4.initialize(import.meta.env.VITE_GA4_MEASUREMENT_ID);
+
 function AppLayout(): JSX.Element {
   return (
     <>
@@ -50,12 +53,6 @@ function AppLayout(): JSX.Element {
 }
 
 function App(): JSX.Element {
-  useEffect(() => {
-    ReactGA4.set({send_page_view: false});
-    ReactGA4.initialize(import.meta.env.VITE_GA4_MEASUREMENT_ID);
-    ReactGA4.send({hitType: "pageview", page: "/", title: "Home"});
-  }, []);
-
   return (
     <>
     {

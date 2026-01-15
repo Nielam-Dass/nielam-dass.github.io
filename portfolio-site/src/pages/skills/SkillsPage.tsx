@@ -1,11 +1,16 @@
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import SkillSearchBar from "./SkillSearchBar";
 import SkillsSearchResults from "./SkillsSearchResults";
 import fullSkillList from "../../data/skillList.json";
 import type Skill from "./Skill";
+import ReactGA4 from "react-ga4";
 
 
 function SkillsPage(): JSX.Element {
+    useEffect(() => {
+        ReactGA4.send({hitType: "pageview", page: "/skills", title: "Skills"});
+    }, []);
+
     const [skillList, setSkillList] = useState<Skill[]>(
         fullSkillList.sort((skill1: Skill, skill2: Skill) => (skill2.skillWeight || 0) - (skill1.skillWeight || 0))
     );
