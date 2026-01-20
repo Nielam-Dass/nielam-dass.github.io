@@ -21,6 +21,9 @@ function SkillsPage(): JSX.Element {
                 return skill.skillName.toLowerCase().includes(event.target.value.toLowerCase());
             });
         });
+        if(event.target.value.length > 0) {
+            ReactGA4.event("skill_search", {searchValue: event.target.value});
+        }
     }
 
     return (
