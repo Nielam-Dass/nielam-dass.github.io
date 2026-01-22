@@ -26,6 +26,9 @@ function ProjectsPage(): JSX.Element {
                     project.skillsUsed.some((skill: string) => isRelevantToSearch(skill, searchQuery));
             });
         });
+        if(searchQuery.length > 0) {
+            ReactGA4.event("project_search", {searchValue: searchQuery});
+        }
     }
     
     return (
