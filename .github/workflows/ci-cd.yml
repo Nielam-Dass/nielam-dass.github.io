@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_UNDER_CONSTRUCTION_FLAG: ${{ vars.VITE_UNDER_CONSTRUCTION_FLAG }}
+      VITE_GA4_MEASUREMENT_ID: ${{ vars.VITE_GA4_MEASUREMENT_ID }}
     defaults:
       run:
         working-directory: ./portfolio-site
