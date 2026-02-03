@@ -5,6 +5,7 @@ import SkillsPage from "./pages/skills/SkillsPage";
 import ContactPage from "./pages/contact/ContactPage";
 import NavigationBar from "./components/NavigationBar";
 import ReactGA4 from "react-ga4";
+import { Helmet } from "react-helmet";
 
 import "./styles.css";
 import { type JSX } from "react";
@@ -55,6 +56,9 @@ function AppLayout(): JSX.Element {
 function App(): JSX.Element {
   return (
     <>
+    <Helmet>
+      <meta name="author" content={import.meta.env.VITE_AUTHOR_NAME}/>
+    </Helmet>
     {
       import.meta.env.VITE_UNDER_CONSTRUCTION_FLAG=="true" &&
       <div className="text-[1.8rem] bg-red-300 text-red-800 border-2 border-red-800 p-[10px]">
