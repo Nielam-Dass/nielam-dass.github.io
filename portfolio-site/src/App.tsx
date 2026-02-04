@@ -57,7 +57,10 @@ function App(): JSX.Element {
   return (
     <>
     <Helmet>
-      <meta name="author" content={import.meta.env.VITE_AUTHOR_NAME}/>
+      <meta name="author" content="Nielam Dass"/>
+      <meta name="title" content="Niel's Dev Portfolio"/>
+      <meta name="description" content="Check out my developer portfolio to see what software engineering projects I've been working on!"/>
+      <meta name="keywords" content="Nielam, Niel, portfolio, software engineer"/>
     </Helmet>
     {
       import.meta.env.VITE_UNDER_CONSTRUCTION_FLAG=="true" &&
