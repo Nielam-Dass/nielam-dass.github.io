@@ -57,10 +57,11 @@ function App(): JSX.Element {
   return (
     <>
     <Helmet>
-      <meta name="author" content="Nielam Dass"/>
-      <meta name="title" content="Niel's Dev Portfolio"/>
-      <meta name="description" content="Check out my developer portfolio to see what software engineering projects I've been working on!"/>
-      <meta name="keywords" content="Nielam, Niel, portfolio, software engineer"/>
+      <meta name="author" content="Nielam Dass" />
+      <meta name="title" content="Niel's Dev Portfolio" />
+      <meta name="description" content="Check out my developer portfolio to see what software engineering projects I've been working on!" />
+      <meta name="keywords" content="Nielam, Niel, portfolio, software engineer" />
+      <meta name="google-site-verification" content={import.meta.env.VITE_GOOGLE_SITE_VERIFICATION_CODE} />
     </Helmet>
     {
       import.meta.env.VITE_UNDER_CONSTRUCTION_FLAG=="true" &&
