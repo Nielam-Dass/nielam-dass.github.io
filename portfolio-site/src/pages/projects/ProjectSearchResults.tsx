@@ -7,6 +7,13 @@ interface ProjectSearchResultsProps {
     projectList: Project[];
 }
 
+/**
+ * Project Search Results component
+ * 
+ * @param props ProjectSearchResults props
+ * @param props.projectList Array of projects to display as search results
+ * @returns JSX Element for project search results
+ */
 function ProjectSearchResults(props: ProjectSearchResultsProps): JSX.Element {
     if(props.projectList.length===0) {
         return (

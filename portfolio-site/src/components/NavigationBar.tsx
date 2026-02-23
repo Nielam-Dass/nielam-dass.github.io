@@ -2,6 +2,11 @@ import type { JSX } from "react";
 import NavigationButton from "./NavigationButton";
 
 
+/**
+ * Navigation Bar component
+ * 
+ * @returns JSX Element for navigation bar
+ */
 function NavigationBar(): JSX.Element {
     return (
         <>

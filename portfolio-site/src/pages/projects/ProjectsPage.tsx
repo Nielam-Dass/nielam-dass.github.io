@@ -6,6 +6,11 @@ import type { Project } from "./Project";
 import ReactGA4 from "react-ga4";
 
 
+/**
+ * Component to display the projects page
+ * 
+ * @returns JSX element for projects page
+ */
 function ProjectsPage(): JSX.Element {
     useEffect(() => {
         ReactGA4.send({hitType: "pageview", page: "/projects", title: "Projects"});

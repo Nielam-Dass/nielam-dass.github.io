@@ -7,6 +7,13 @@ interface ProjectCardProps {
     project: Project;
 }
 
+/**
+ * Project Card component
+ * 
+ * @param props ProjectCard props object
+ * @param props.project Object containing project details
+ * @returns JSX Element for project card
+ */
 function ProjectCard(props: ProjectCardProps): JSX.Element {
     const projectImageFile: string = (props.project.projectImageSrc===undefined || props.project.projectImageSrc==="") ? "default_project_icon.png" : props.project.projectImageSrc
     const projectImage = new URL(`../../assets/projectImages/${projectImageFile}`, import.meta.url).href

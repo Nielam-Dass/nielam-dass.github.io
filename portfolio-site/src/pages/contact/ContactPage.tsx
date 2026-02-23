@@ -3,6 +3,11 @@ import ContactInfoList from "./ContactInfoList";
 import ReactGA4 from "react-ga4";
 
 
+/**
+ * Component to display the contact page
+ * 
+ * @returns JSX element for contact page
+ */
 function ContactPage(): JSX.Element {
     useEffect(() => {
         ReactGA4.send({hitType: "pageview", page: "/contact", title: "Contact"});

@@ -6,6 +6,13 @@ interface ProjectSearchBarProps {
     onSearchUpdate: React.ChangeEventHandler<HTMLInputElement>;
 }
 
+/**
+ * Project Search Bar component
+ * 
+ * @param props ProjectSearchBar props object
+ * @param props.onSearchUpdate Event handler function that runs when search text is changed
+ * @returns JSX Element for project search bar
+ */
 function ProjectSearchBar(props: ProjectSearchBarProps): JSX.Element {
     return (
         <div className="flex flex-col items-center gap-[20px] pb-[40px] pt-[60px]">

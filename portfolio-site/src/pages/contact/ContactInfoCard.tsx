@@ -8,6 +8,16 @@ interface ContactInfoCardProps {
     contactIconSrc: string;
 }
 
+/**
+ * Contact Info Card component
+ * 
+ * @param props ContactInfoCard props object
+ * @param props.contactMethod Name of contact method
+ * @param props.contactLink Link for contact as string
+ * @param props.extraMessage Message to display with contact info
+ * @param props.contactIconSrc Image source for contact icon
+ * @returns JSX Element for contact info card
+ */
 function ContactInfoCard(props: ContactInfoCardProps): JSX.Element {
     const contactIcon = new URL(`../../assets/${props.contactIconSrc}`, import.meta.url).href;
     

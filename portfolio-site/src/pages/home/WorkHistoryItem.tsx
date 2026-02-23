@@ -9,6 +9,17 @@ interface WorkHistoryItemProps {
     jobDetails: string[]
 }
 
+/**
+ * Work History Item component
+ * 
+ * @param props WorkHistoryItem props object
+ * @param props.jobTitle Job title
+ * @param props.jobCompany Company job was at
+ * @param props.startDate Start date of the job
+ * @param props.endDate End date of the job
+ * @param props.jobDetails String array of text bullet points describing the job
+ * @returns JSX Element for work history item
+ */
 function WorkHistoryItem(props: WorkHistoryItemProps): JSX.Element {
     return (
         <li>

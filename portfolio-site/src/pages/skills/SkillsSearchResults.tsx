@@ -7,6 +7,13 @@ interface SkillsSearchResultsProps {
     skillList: Skill[];
 }
 
+/**
+ * Skills Search Results component
+ * 
+ * @param props SkillsSearchResults props object
+ * @param props.skillList Array of skills to display as search results
+ * @returns JSX Element for skills search results
+ */
 function SkillsSearchResults(props: SkillsSearchResultsProps): JSX.Element {
   if(props.skillList.length===0) {
     return (

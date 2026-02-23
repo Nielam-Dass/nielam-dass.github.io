@@ -12,6 +12,11 @@ import aboutContent from "../../data/aboutContent.json";
 import ReactGA4 from "react-ga4";
 
 
+/**
+ * Component to display the home page
+ * 
+ * @returns JSX element for home page
+ */
 function HomePage(): JSX.Element {
     useEffect(() => {
         ReactGA4.send({hitType: "pageview", page: "/", title: "Home"});

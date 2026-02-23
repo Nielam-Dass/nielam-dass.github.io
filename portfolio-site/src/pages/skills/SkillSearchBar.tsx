@@ -5,6 +5,13 @@ interface SkillSearchBarProps {
     onSearchUpdate: React.ChangeEventHandler<HTMLInputElement>;
 }
 
+/**
+ * Skill Search Bar component
+ * 
+ * @param props SkillSearchBar props object
+ * @param props.onSearchUpdate Event handler function that runs when search text is changed
+ * @returns JSX Element for skill search bar
+ */
 function SkillSearchBar(props: SkillSearchBarProps): JSX.Element {
     return (
         <div className="flex flex-col items-center gap-[10px] pt-[60px] pb-[40px]">

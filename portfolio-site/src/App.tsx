@@ -42,6 +42,11 @@ const hashRouter = createHashRouter([
 ReactGA4.set({send_page_view: false});
 ReactGA4.initialize(import.meta.env.VITE_GA4_MEASUREMENT_ID);
 
+/**
+ * Defines layout of the main App component
+ * 
+ * @returns JSX element for app layout
+ */
 function AppLayout(): JSX.Element {
   return (
     <>
@@ -52,6 +57,11 @@ function AppLayout(): JSX.Element {
   );
 }
 
+/**
+ * Main App component
+ * 
+ * @returns JSX element for the App component
+ */
 function App(): JSX.Element {
   return (
     <>

@@ -6,6 +6,11 @@ import type Skill from "./Skill";
 import ReactGA4 from "react-ga4";
 
 
+/**
+ * component to display the skills page
+ * 
+ * @returns JSX element for skills page
+ */
 function SkillsPage(): JSX.Element {
     useEffect(() => {
         ReactGA4.send({hitType: "pageview", page: "/skills", title: "Skills"});

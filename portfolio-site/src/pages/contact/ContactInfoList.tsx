@@ -4,6 +4,11 @@ import ContactInfoCard from "./ContactInfoCard";
 import contactInfo from "../../data/contactInfo.json";
 
 
+/**
+ * Contact Info List component
+ * 
+ * @returns JSX Element for contact info list
+ */
 function ContactInfoList(): JSX.Element {
     return (
         <>
